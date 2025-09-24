@@ -26,6 +26,7 @@ html {
     left: 0;
     width: 100%;
     z-index: 100;
+    height: 60px;
     display: flex;
     box-shadow: 10px 8px 8px 0 rgba(4, 216, 117, 0.3), 0 7px 21px 0 rgb(0, 0, 0, 0.20);
     border-radius: 0 0 20px 20px;
@@ -70,7 +71,7 @@ html {
     text-decoration: none;
     color: #ddd;
     font-size: 16px;
-    padding: 5px 10px;
+    padding: 10px;
     white-space: nowrap;
     /* ✅ prevent breaking words */
     transition: color 0.3s;
@@ -106,6 +107,10 @@ html {
     border: none;
     cursor: pointer;
     margin-right: 20px;
+}
+.navbar button:hover {
+    color: #0751f0;
+    transition: color 0.3s;
 }
 
 .hero {
@@ -148,6 +153,7 @@ html {
     /* ✅ maintains aspect ratio */
     border-radius: 50%;
     border: 10px solid rgb(118, 241, 118);
+     box-shadow: 2px 5px 5px 8px rgb(26, 110, 131);
 }
 
 /* Responsive adjustments for small screens */
@@ -165,6 +171,7 @@ html {
         width: 200px;
         /* smaller image on mobile */
         height: auto;
+        
     }
 }
 
@@ -176,7 +183,9 @@ html {
     border-radius: 20px 0 20px 0;
     cursor: pointer;
     transition: background 0.3s;
+    box-shadow: 2px 5px 5px 8px rgb(173, 101, 101);
 }
+
 
 .hero button:hover {
     background: rgba(85, 155, 38, 0.8);
@@ -216,7 +225,7 @@ p {
     /* ✅ makes image responsive */
     height: auto;
     /* ✅ keeps proportions */
-    border-radius: 20px;
+    border-radius: 30px;
     /* optional: rounded edges */
 }
 
@@ -250,6 +259,7 @@ p {
     border-radius: 8px;
     text-decoration: none;
     transition: background 0.3s;
+       box-shadow: 2px 5px 5px 8px rgb(216, 120, 120);
 }
 
 .About a:hover {
@@ -335,6 +345,12 @@ p {
     padding: 20px;
     text-align: center;
     box-sizing: border-box;
+     box-shadow: 2px 5px 5px 8px rgb(50, 198, 235);
+}
+.services div:hover {
+    background: rgba(179, 92, 157, 0.8);
+    transform: scale(1.05);
+    transition: transform 0.3s;
 }
 
 .services img {
@@ -367,12 +383,12 @@ p {
     padding: 10px 30px;
     border-radius: 20px 0 20px 0;
     transition: background 0.3s;
+   
 }
 
 .serv1 a:hover {
     background: #201c2b;
 }
-
 .serv2 a {
     text-decoration: none;
     color: rgb(177, 168, 168);
@@ -439,6 +455,12 @@ p {
     background: rgba(0, 0, 0, 0.6);
     border-radius: 20px;
     padding: 20px;
+     box-shadow: 2px 5px 5px 8px rgb(36, 143, 170);
+}
+#item1 div:hover {
+    background: rgba(8, 54, 4, 0.8);
+    transform: scale(1.05);
+    transition: transform 0.3s;
 }
 
 #item1 img {
@@ -472,6 +494,12 @@ p {
     flex-direction: column;
     /* stack h1, p, a */
     justify-content: space-between;
+     box-shadow: 2px 5px 5px 8px rgb(36, 121, 143);
+}
+.idy div:hover {
+    background: rgba(26, 128, 97, 0.8);
+    transform: scale(1.05);
+    transition: transform 0.3s;
 }
 
 .idy {
@@ -573,9 +601,13 @@ a {
     /* padding: 30px 25px; */
     align-content: center;
     margin-top: 30px;
-   
+     box-shadow: 2px 5px 5px 8px rgb(50, 198, 235);
 }
-
+.blog-items div:hover {
+    background: rgba(0, 0, 0, 0.8);
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
 .blog-items h2 {
     color: rgb(194, 174, 174);
     margin-top: 20px;
