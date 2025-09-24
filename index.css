@@ -62,10 +62,11 @@ html {
 
 .navbar ul li {
     display: inline;
-
-
 }
 
+.navbar li{
+    border-right: 2px solid rgb(214, 252, 3);
+}
 /* Navbar links */
 .navbar ul li a {
     text-decoration: none;
@@ -75,6 +76,11 @@ html {
     white-space: nowrap;
     /* ✅ prevent breaking words */
     transition: color 0.3s;
+}
+.navbar .btn {
+    background: green;
+    padding: 10px 25px;
+    border-radius: 20px;
 }
 
 .navbar ul li a:hover {
@@ -152,7 +158,7 @@ html {
     height: auto;
     /* ✅ maintains aspect ratio */
     border-radius: 50%;
-    border: 10px solid rgb(118, 241, 118);
+    border: 10px solid rgb(21, 51, 21);
      box-shadow: 2px 5px 5px 8px rgb(26, 110, 131);
 }
 
@@ -364,15 +370,15 @@ p {
 }
 
 .serv2 p {
-    margin: 20px;
+    margin: 14.2px;
 }
 
 .serv3 p {
-    margin: 22.5px;
+    margin: 20px;
 }
 
 .serv4 p {
-    margin: 15px;
+    margin: 20px;
 }
 
 .serv1 a {
@@ -580,7 +586,7 @@ a {
 .blog-items {
     display: flex;
     justify-content: space-evenly;
-    gap: 10px;
+    gap: 8px;
     flex-wrap: wrap;
 
 }
