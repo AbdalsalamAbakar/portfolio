@@ -1,7 +1,8 @@
- <style>* {
-     box-sizing: border-box;
-     /* flex-wrap: wrap; */
- }
+*{
+    margin: 0;
+    padding: 0;
+ 
+}
 
  body {
      background-color: #034f97;
@@ -49,7 +50,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 15px;                 /* ✅ space between links */
+   gap: 5px;               /*  ✅ space between links */
 }
 
  .navbar ul li {
@@ -111,7 +112,7 @@
   flex: 1 1 350px;           /* ✅ responsive width, min 350px */
   max-width: 600px;          /* ✅ max width */
 }         /* ✅ max width */
-}
+
 .hero h1, .hero h3, .hero p {
   margin-bottom: 20px;
 }
@@ -289,7 +290,7 @@
  }
 
  .serv4 p {
-     margin: 4px;
+     margin: 15px;
  }
 
  .serv1 a {
