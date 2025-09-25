@@ -6,10 +6,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./index.css">
+   <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #034f97, #4a90e2);
+    }
+
+    /* Login container */
+    .login-container {
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 15px;
+      width: 350px;
+      text-align: center;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .login-container h1 {
+      margin-bottom: 20px;
+      font-size: 28px;
+      color: #034f97;
+    }
+
+    /* Form */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    form label {
+      text-align: left;
+      font-size: 14px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    form input {
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    form input:focus {
+      border-color: #034f97;
+      box-shadow: 0 0 5px rgba(3, 79, 151, 0.4);
+    }
+
+    /* Forgot password */
+    form p {
+      font-size: 13px;
+      color: #034f97;
+      cursor: pointer;
+      margin-top: -5px;
+      text-align: right;
+    }
+
+    form p:hover {
+      text-decoration: underline;
+    }
+
+    /* Button */
+    form button {
+      padding: 12px;
+      background: #034f97;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    form button:hover {
+      background: #023f7a;
+    }
+
+    /* Responsive */
+    @media (max-width: 400px) {
+      .login-container {
+        width: 90%;
+        padding: 30px 20px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-   <section class="Login" id="login">
+        <div class="navbar">
+        <div>
+            <button>portfolio</button>
+        </div>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#about">About Me </a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="#contact me">Contact Me</a></li>
+            <li><a href="./login.html" class="btn">Login</a></li>
+            <li><a href="./signup.html" class="btn">SignUp</a></li>
+        </ul>
+    </div>
+
+    <!-- <section class="Login" id="login">
         <h1>Login</h1>
         <div class="form-container1">
             <form action="">
@@ -26,8 +142,23 @@
                 </div>
             </form>
         </div>
-<a href="./index.htm" style="text-decoration: none; background: green; padding: 10px 20px; border-radius: 20px;">back to home page</a>
-    </section>
+        <a href="./index.htm"
+            style="text-decoration: none; background: green; padding: 10px 20px; border-radius: 20px;">back to home
+            page</a>
+    </section> -->
+  <div class="login-container">
+    <h1>Login</h1>
+    <form>
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Enter your password" required>
+
+      <p>Forgot password?</p>
+      <button type="submit">Submit Now</button>
+    </form>
+  </div>
 </body>
 
 </html>
