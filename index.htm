@@ -4,35 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
         integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link rel="stylesheet" href="./index.css">
-
-
-    </style>
 </head>
 
 <body>
 
 
-    <div class="navbar">
-        <div>
-            <button>portfolio</button>
-        </div>
-        <ul>
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#about">About Me </a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a href="#contact-inf">Contact Me</a></li>
-            <li><a href="./login.html" class="btn">Login</a></li>
-            <li><a href="./signup.html" class="btn">SignUp</a></li>
-        </ul>
+<div class="navbar">
+    <div>
+        <button>Portfolio</button>
     </div>
+
+    <!-- Checkbox for menu toggle -->
+    <input type="checkbox" id="menu-toggle">
+    <!-- Label acts as hamburger -->
+    <label for="menu-toggle" class="menu"><i class='bx bx-menu'></i></label>
+
+    <!-- Links -->
+    <ul class="links">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#about">About Me </a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="#contact-inf">Contact Me</a></li>
+        <li><a href="./login.html" class="btn">Login</a></li>
+        <li><a href="./signup.html" class="btn">SignUp</a></li>
+    </ul>
+</div>
+
+
 
     <div class="hero" id="Home">
         <div>
